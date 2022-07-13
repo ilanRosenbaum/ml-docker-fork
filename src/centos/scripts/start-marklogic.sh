@@ -107,7 +107,6 @@ fi
 # so the function works whether or not security is initialized.
 #   $1 :  The hostname to test against
 #   $2 :  The baseline timestamp
-#   $3 :  Invokers LINENO, for improved error reporting
 # Returns 0 if restart is detected, exits with an error if not.
 ################################################################
 N_RETRY=5 # 5 and 10 numbers taken directy from documentation: https://docs.marklogic.com/guide/admin-api/cluster#id_10889
