@@ -234,7 +234,7 @@ elif [[ "${MARKLOGIC_INIT}" == "true" ]]; then
     fi
 
     log "Initialzing MarkLogic on ${HOSTNAME}."
-    TIMESTAMP=$(curl --anyauth -m 20 -s --retry 5 \
+    TIMESTAMP=$(curl --anyauth -m 30 -s --retry 5 \
         -i -X POST -H "Content-type:application/json" \
         -d "${LICENSE_PAYLOAD}" \
         http://"${HOSTNAME}":8001/admin/v1/init |
